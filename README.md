@@ -1,6 +1,6 @@
 # DAGSchedulingAlgorithm
 
-Algorithm for DAG Scheduling
+[完整算法仓库](https://github.com/automaticdai/research-dag-scheduling-analysis)
 
 ## 说明
 
