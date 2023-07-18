@@ -1,3 +1,4 @@
+import codecs
 import math
 import numpy as np
 import matplotlib.pyplot as plt
@@ -8,6 +9,8 @@ import time, datetime
 
 from tqdm import tqdm
 import networkx as nx
+import matplotlib.pyplot as plt
+import chardet
 import copy
 
 from graph import Graph
@@ -1078,3 +1081,9 @@ if __name__ == "__main__":
 
     l, lf, lb = EOPA_Algorithm.EOPA(1, 4)
     print(l)
+    # draw the gml
+    dag_task_file = dag_base_folder + "Tau_{:d}.gml".format(1)
+    G= nx.read_gml(dag_task_file)
+    plt.figure(figsize=(10, 10))
+    nx.draw(G, with_labels=True)
+    plt.show()
